@@ -101,7 +101,7 @@
 		B03DF4E21C3A5FCF006BA034 /* ThPullRefreshDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F5AE564F1C3AAECA004D75E4 /* ThPullRefresh */,
+				F5AE56521C3AAF4C004D75E4 /* ThPullRefresh */,
 				B03DF5131C3A60E1006BA034 /* ExampleController_one.swift */,
 				B03DF5141C3A60E1006BA034 /* ExampleTableView.swift */,
 				B03DF5111C3A60C4006BA034 /* Main.storyboard */,
@@ -132,23 +132,23 @@
 			path = ThPullRefreshDemoUITests;
 			sourceTree = "<group>";
 		};
-		F5AE564F1C3AAECA004D75E4 /* ThPullRefresh */ = {
+		F5AE56521C3AAF4C004D75E4 /* ThPullRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				F5AE56501C3AAECA004D75E4 /* Foot */,
-				F5AE56511C3AAECA004D75E4 /* Head */,
+				F5AE56531C3AAF4C004D75E4 /* Foot */,
+				F5AE56541C3AAF4C004D75E4 /* Head */,
 			);
 			path = ThPullRefresh;
 			sourceTree = SOURCE_ROOT;
 		};
-		F5AE56501C3AAECA004D75E4 /* Foot */ = {
+		F5AE56531C3AAF4C004D75E4 /* Foot */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Foot;
 			sourceTree = "<group>";
 		};
-		F5AE56511C3AAECA004D75E4 /* Head */ = {
+		F5AE56541C3AAF4C004D75E4 /* Head */ = {
 			isa = PBXGroup;
 			children = (
 			);
