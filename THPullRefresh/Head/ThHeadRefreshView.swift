@@ -82,7 +82,6 @@ class ThHeadRefreshView: ThRefreshBasicView {
     }
     
     func adjustStateWithContentOffset(){
-        print(self.scrollView?.contentOffset.y)
         let offset = self.scrollView?.th_offsetY
         let headExistOffset = 0-(self.scrollView?.contentInset.top)!
         let refreshPoint = headExistOffset - self.height
