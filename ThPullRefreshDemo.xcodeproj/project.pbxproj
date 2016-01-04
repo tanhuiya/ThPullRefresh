@@ -24,6 +24,7 @@
 		F5AE56651C3AB02E004D75E4 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AE565D1C3AB02E004D75E4 /* UIScrollView+Extension.swift */; };
 		F5AE56661C3AB02E004D75E4 /* UIScrollView+ThRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AE565E1C3AB02E004D75E4 /* UIScrollView+ThRefresh.swift */; };
 		F5AE56671C3AB02E004D75E4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AE565F1C3AB02E004D75E4 /* UIView+Extension.swift */; };
+		F5AE56691C3AB0D9004D75E4 /* ThRefreshBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AE56681C3AB0D9004D75E4 /* ThRefreshBasicView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F5AE565D1C3AB02E004D75E4 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
 		F5AE565E1C3AB02E004D75E4 /* UIScrollView+ThRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ThRefresh.swift"; sourceTree = "<group>"; };
 		F5AE565F1C3AB02E004D75E4 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F5AE56681C3AB0D9004D75E4 /* ThRefreshBasicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThRefreshBasicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				F5AE565C1C3AB02E004D75E4 /* ThRefreshConst.swift */,
 				F5AE565D1C3AB02E004D75E4 /* UIScrollView+Extension.swift */,
 				F5AE565E1C3AB02E004D75E4 /* UIScrollView+ThRefresh.swift */,
+				F5AE56681C3AB0D9004D75E4 /* ThRefreshBasicView.swift */,
 				F5AE565F1C3AB02E004D75E4 /* UIView+Extension.swift */,
 			);
 			path = ThPullRefresh;
@@ -314,6 +317,7 @@
 				F5AE56671C3AB02E004D75E4 /* UIView+Extension.swift in Sources */,
 				B03DF5161C3A60E1006BA034 /* ExampleTableView.swift in Sources */,
 				F5AE56661C3AB02E004D75E4 /* UIScrollView+ThRefresh.swift in Sources */,
+				F5AE56691C3AB0D9004D75E4 /* ThRefreshBasicView.swift in Sources */,
 				F5AE56641C3AB02E004D75E4 /* ThRefreshConst.swift in Sources */,
 				B03DF4E61C3A5FCF006BA034 /* ViewController.swift in Sources */,
 				F5AE56621C3AB02E004D75E4 /* ThHeadRefreshView.swift in Sources */,
