@@ -15,7 +15,7 @@ class ExampleTableView: UITableViewController {
     lazy var dataArr : NSMutableArray = {
        return NSMutableArray()
     }()
-    
+    var index = 0
     //public 
     func beginRefresh(){
         self.tableView.headBeginRefresh()
@@ -37,28 +37,29 @@ class ExampleTableView: UITableViewController {
     }
     
     func loadNewData(){
-        
-        for (var i = 0 ;i<5;i++){
-            let str = "下拉刷新5个cell，第\(i+1)个"
-            dataArr.addObject(str)
-        }
         //延时模拟刷新
+        self.index = 0
         DeLayTime(2.0, closure: { () -> () in
+            self.dataArr.removeAllObjects()
+            for (var i = 0 ;i<5;i++){
+                let str = "最新5个cell，第\(self.index++)个"
+                self.dataArr.addObject(str)
+            }
             self.tableView.reloadData()
-            self.tableView .stopHeadRefreshing()
+            self.tableView .tableHeadStopRefreshing()
         })
         
     }
     func loadMoreData(){
-        
-        for (var i = 0 ;i<5;i++){
-            let str = "上拉刷新5个cell，第\(i+1)个"
-            dataArr.addObject(str)
-        }
         //延时模拟刷新
         DeLayTime(2.0, closure: { () -> () in
+            for (var i = 0 ;i<10;i++){
+                let str = "上拉刷新5个cell，第\(self.index++)个"
+                self.dataArr.addObject(str)
+            }
             self.tableView.reloadData()
-            self.tableView .stopFootRefreshing()
+            self.tableView .tableFootStopRefreshing()
+            self.tableView.tableFootShowNomore()
         })
         
     }

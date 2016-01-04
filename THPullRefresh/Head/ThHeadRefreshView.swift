@@ -55,6 +55,7 @@ class ThHeadRefreshView: ThRefreshBasicView {
             if(oldState == .Refreshing){
                 UIView.animateWithDuration(ThHeadRefreshAnimation, animations: {
                     self.scrollView?.th_insetT -= self.height
+
                     }, completion: nil)
                 self.timeDate = NSDate()
             }
@@ -65,6 +66,7 @@ class ThHeadRefreshView: ThRefreshBasicView {
             if(oldState == .Pulling || oldState == .WillRefresh){
                 UIView.animateWithDuration(ThHeadRefreshAnimation, animations: {
                     self.scrollView?.th_insetT=(self.scrollView?.th_insetT)!+self.height
+                    
                     }, completion: nil)
                 if((self.refreshClosure) != nil){
                     self.refreshClosure!()
@@ -80,6 +82,7 @@ class ThHeadRefreshView: ThRefreshBasicView {
     }
     
     func adjustStateWithContentOffset(){
+        print(self.scrollView?.contentOffset.y)
         let offset = self.scrollView?.th_offsetY
         let headExistOffset = 0-(self.scrollView?.contentInset.top)!
         let refreshPoint = headExistOffset - self.height

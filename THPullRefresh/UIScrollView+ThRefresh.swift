@@ -47,7 +47,7 @@ extension UIScrollView{
             }
         }
     }
-    func stopHeadRefreshing(){
+    func tableHeadStopRefreshing(){
         self.head?.stopRefreshing()
     }
     //foot
@@ -80,8 +80,16 @@ extension UIScrollView{
             }
         }
     }
-    func stopFootRefreshing(){
+    func tableFootStopRefreshing(){
         self.foot?.footEndRefreshing()
     }
-
+    func tableFootShowNomore(){
+        if(self.istableFootRefreshing()){
+            self.tableFootStopRefreshing()
+        }
+        self.foot?.state = .Nomore
+    }
+    func istableFootRefreshing()->Bool{
+        return self.foot?.state == .Refreshing
+    }
 }

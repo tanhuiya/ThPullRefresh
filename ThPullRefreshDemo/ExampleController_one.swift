@@ -38,7 +38,7 @@ class ExampleController_one: UIViewController ,UITableViewDelegate,UITableViewDa
             //延时模拟刷新
             DeLayTime(2.0, closure: { () -> () in
                 self.tableView.reloadData()
-                self.tableView .stopHeadRefreshing()
+                self.tableView .tableHeadStopRefreshing()
             })
             
         }

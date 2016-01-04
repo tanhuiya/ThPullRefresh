@@ -16,15 +16,15 @@
 		B03DF5121C3A60C4006BA034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03DF5111C3A60C4006BA034 /* Main.storyboard */; };
 		B03DF5151C3A60E1006BA034 /* ExampleController_one.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5131C3A60E1006BA034 /* ExampleController_one.swift */; };
 		B03DF5161C3A60E1006BA034 /* ExampleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5141C3A60E1006BA034 /* ExampleTableView.swift */; };
-		B03DF5231C3A60EA006BA034 /* ThFootRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5191C3A60EA006BA034 /* ThFootRefreshView.swift */; };
-		B03DF5241C3A60EA006BA034 /* ThHeadArrowRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF51B1C3A60EA006BA034 /* ThHeadArrowRefreshView.swift */; };
-		B03DF5251C3A60EA006BA034 /* ThHeadRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF51C1C3A60EA006BA034 /* ThHeadRefreshView.swift */; };
-		B03DF5261C3A60EA006BA034 /* ThRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B03DF51D1C3A60EA006BA034 /* ThRefresh.bundle */; };
-		B03DF5271C3A60EA006BA034 /* ThRefreshBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF51E1C3A60EA006BA034 /* ThRefreshBasicView.swift */; };
-		B03DF5281C3A60EA006BA034 /* ThRefreshConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF51F1C3A60EA006BA034 /* ThRefreshConst.swift */; };
-		B03DF5291C3A60EA006BA034 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5201C3A60EA006BA034 /* UIScrollView+Extension.swift */; };
-		B03DF52A1C3A60EA006BA034 /* UIScrollView+ThRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5211C3A60EA006BA034 /* UIScrollView+ThRefresh.swift */; };
-		B03DF52B1C3A60EA006BA034 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5221C3A60EA006BA034 /* UIView+Extension.swift */; };
+		B03DF5381C3A6FA0006BA034 /* ThFootRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF52E1C3A6FA0006BA034 /* ThFootRefreshView.swift */; };
+		B03DF5391C3A6FA0006BA034 /* ThHeadArrowRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5301C3A6FA0006BA034 /* ThHeadArrowRefreshView.swift */; };
+		B03DF53A1C3A6FA0006BA034 /* ThHeadRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5311C3A6FA0006BA034 /* ThHeadRefreshView.swift */; };
+		B03DF53B1C3A6FA0006BA034 /* ThRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B03DF5321C3A6FA0006BA034 /* ThRefresh.bundle */; };
+		B03DF53C1C3A6FA0006BA034 /* ThRefreshBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5331C3A6FA0006BA034 /* ThRefreshBasicView.swift */; };
+		B03DF53D1C3A6FA0006BA034 /* ThRefreshConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5341C3A6FA0006BA034 /* ThRefreshConst.swift */; };
+		B03DF53E1C3A6FA0006BA034 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5351C3A6FA0006BA034 /* UIScrollView+Extension.swift */; };
+		B03DF53F1C3A6FA0006BA034 /* UIScrollView+ThRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5361C3A6FA0006BA034 /* UIScrollView+ThRefresh.swift */; };
+		B03DF5401C3A6FA0006BA034 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5371C3A6FA0006BA034 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,15 +60,15 @@
 		B03DF5111C3A60C4006BA034 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B03DF5131C3A60E1006BA034 /* ExampleController_one.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleController_one.swift; sourceTree = "<group>"; };
 		B03DF5141C3A60E1006BA034 /* ExampleTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableView.swift; sourceTree = "<group>"; };
-		B03DF5191C3A60EA006BA034 /* ThFootRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThFootRefreshView.swift; sourceTree = "<group>"; };
-		B03DF51B1C3A60EA006BA034 /* ThHeadArrowRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThHeadArrowRefreshView.swift; sourceTree = "<group>"; };
-		B03DF51C1C3A60EA006BA034 /* ThHeadRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThHeadRefreshView.swift; sourceTree = "<group>"; };
-		B03DF51D1C3A60EA006BA034 /* ThRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ThRefresh.bundle; sourceTree = "<group>"; };
-		B03DF51E1C3A60EA006BA034 /* ThRefreshBasicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThRefreshBasicView.swift; sourceTree = "<group>"; };
-		B03DF51F1C3A60EA006BA034 /* ThRefreshConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThRefreshConst.swift; sourceTree = "<group>"; };
-		B03DF5201C3A60EA006BA034 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
-		B03DF5211C3A60EA006BA034 /* UIScrollView+ThRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ThRefresh.swift"; sourceTree = "<group>"; };
-		B03DF5221C3A60EA006BA034 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B03DF52E1C3A6FA0006BA034 /* ThFootRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThFootRefreshView.swift; sourceTree = "<group>"; };
+		B03DF5301C3A6FA0006BA034 /* ThHeadArrowRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThHeadArrowRefreshView.swift; sourceTree = "<group>"; };
+		B03DF5311C3A6FA0006BA034 /* ThHeadRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThHeadRefreshView.swift; sourceTree = "<group>"; };
+		B03DF5321C3A6FA0006BA034 /* ThRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ThRefresh.bundle; sourceTree = "<group>"; };
+		B03DF5331C3A6FA0006BA034 /* ThRefreshBasicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThRefreshBasicView.swift; sourceTree = "<group>"; };
+		B03DF5341C3A6FA0006BA034 /* ThRefreshConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThRefreshConst.swift; sourceTree = "<group>"; };
+		B03DF5351C3A6FA0006BA034 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
+		B03DF5361C3A6FA0006BA034 /* UIScrollView+ThRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ThRefresh.swift"; sourceTree = "<group>"; };
+		B03DF5371C3A6FA0006BA034 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 		B03DF4E21C3A5FCF006BA034 /* ThPullRefreshDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B03DF5171C3A60EA006BA034 /* THPullRefresh */,
+				B03DF52C1C3A6FA0006BA034 /* ThPullRefresh */,
 				B03DF5131C3A60E1006BA034 /* ExampleController_one.swift */,
 				B03DF5141C3A60E1006BA034 /* ExampleTableView.swift */,
 				B03DF5111C3A60C4006BA034 /* Main.storyboard */,
@@ -150,34 +150,34 @@
 			path = ThPullRefreshDemoUITests;
 			sourceTree = "<group>";
 		};
-		B03DF5171C3A60EA006BA034 /* THPullRefresh */ = {
+		B03DF52C1C3A6FA0006BA034 /* ThPullRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				B03DF5181C3A60EA006BA034 /* Foot */,
-				B03DF51A1C3A60EA006BA034 /* Head */,
-				B03DF51D1C3A60EA006BA034 /* ThRefresh.bundle */,
-				B03DF51E1C3A60EA006BA034 /* ThRefreshBasicView.swift */,
-				B03DF51F1C3A60EA006BA034 /* ThRefreshConst.swift */,
-				B03DF5201C3A60EA006BA034 /* UIScrollView+Extension.swift */,
-				B03DF5211C3A60EA006BA034 /* UIScrollView+ThRefresh.swift */,
-				B03DF5221C3A60EA006BA034 /* UIView+Extension.swift */,
+				B03DF52D1C3A6FA0006BA034 /* Foot */,
+				B03DF52F1C3A6FA0006BA034 /* Head */,
+				B03DF5321C3A6FA0006BA034 /* ThRefresh.bundle */,
+				B03DF5331C3A6FA0006BA034 /* ThRefreshBasicView.swift */,
+				B03DF5341C3A6FA0006BA034 /* ThRefreshConst.swift */,
+				B03DF5351C3A6FA0006BA034 /* UIScrollView+Extension.swift */,
+				B03DF5361C3A6FA0006BA034 /* UIScrollView+ThRefresh.swift */,
+				B03DF5371C3A6FA0006BA034 /* UIView+Extension.swift */,
 			);
-			path = THPullRefresh;
+			path = ThPullRefresh;
 			sourceTree = SOURCE_ROOT;
 		};
-		B03DF5181C3A60EA006BA034 /* Foot */ = {
+		B03DF52D1C3A6FA0006BA034 /* Foot */ = {
 			isa = PBXGroup;
 			children = (
-				B03DF5191C3A60EA006BA034 /* ThFootRefreshView.swift */,
+				B03DF52E1C3A6FA0006BA034 /* ThFootRefreshView.swift */,
 			);
 			path = Foot;
 			sourceTree = "<group>";
 		};
-		B03DF51A1C3A60EA006BA034 /* Head */ = {
+		B03DF52F1C3A6FA0006BA034 /* Head */ = {
 			isa = PBXGroup;
 			children = (
-				B03DF51B1C3A60EA006BA034 /* ThHeadArrowRefreshView.swift */,
-				B03DF51C1C3A60EA006BA034 /* ThHeadRefreshView.swift */,
+				B03DF5301C3A6FA0006BA034 /* ThHeadArrowRefreshView.swift */,
+				B03DF5311C3A6FA0006BA034 /* ThHeadRefreshView.swift */,
 			);
 			path = Head;
 			sourceTree = "<group>";
@@ -289,7 +289,7 @@
 				B03DF5121C3A60C4006BA034 /* Main.storyboard in Resources */,
 				B03DF4EE1C3A5FCF006BA034 /* LaunchScreen.storyboard in Resources */,
 				B03DF4EB1C3A5FCF006BA034 /* Assets.xcassets in Resources */,
-				B03DF5261C3A60EA006BA034 /* ThRefresh.bundle in Resources */,
+				B03DF53B1C3A6FA0006BA034 /* ThRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,16 +316,16 @@
 			files = (
 				B03DF5161C3A60E1006BA034 /* ExampleTableView.swift in Sources */,
 				B03DF4E61C3A5FCF006BA034 /* ViewController.swift in Sources */,
-				B03DF5251C3A60EA006BA034 /* ThHeadRefreshView.swift in Sources */,
-				B03DF5271C3A60EA006BA034 /* ThRefreshBasicView.swift in Sources */,
+				B03DF53A1C3A6FA0006BA034 /* ThHeadRefreshView.swift in Sources */,
+				B03DF53C1C3A6FA0006BA034 /* ThRefreshBasicView.swift in Sources */,
 				B03DF5151C3A60E1006BA034 /* ExampleController_one.swift in Sources */,
-				B03DF5281C3A60EA006BA034 /* ThRefreshConst.swift in Sources */,
-				B03DF52B1C3A60EA006BA034 /* UIView+Extension.swift in Sources */,
+				B03DF53D1C3A6FA0006BA034 /* ThRefreshConst.swift in Sources */,
+				B03DF5401C3A6FA0006BA034 /* UIView+Extension.swift in Sources */,
 				B03DF4E41C3A5FCF006BA034 /* AppDelegate.swift in Sources */,
-				B03DF52A1C3A60EA006BA034 /* UIScrollView+ThRefresh.swift in Sources */,
-				B03DF5241C3A60EA006BA034 /* ThHeadArrowRefreshView.swift in Sources */,
-				B03DF5231C3A60EA006BA034 /* ThFootRefreshView.swift in Sources */,
-				B03DF5291C3A60EA006BA034 /* UIScrollView+Extension.swift in Sources */,
+				B03DF53F1C3A6FA0006BA034 /* UIScrollView+ThRefresh.swift in Sources */,
+				B03DF5391C3A6FA0006BA034 /* ThHeadArrowRefreshView.swift in Sources */,
+				B03DF5381C3A6FA0006BA034 /* ThFootRefreshView.swift in Sources */,
+				B03DF53E1C3A6FA0006BA034 /* UIScrollView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
