@@ -15,17 +15,17 @@ extension UIScrollView{
         static var ThFootRefreshName = "ThFootRefreshName"
 
     }
-    func headBeginRefresh(){
+    public func headBeginRefresh(){
         self.head!.beginRefresh()
     }
-    func addHeadRefresh(target : AnyObject?,action : Selector){
+    public func addHeadRefresh(target : AnyObject?,action : Selector){
         let head = ThHeadArrowRefreshView()
         self.head = head
         self.addSubview(head)
         head.refreshTarget = target
         head.refreshAction = action
     }
-    func addHeadRefresh(target : AnyObject? ,closure : ()->()){
+    public func addHeadRefresh(target : AnyObject? ,closure : ()->()){
         let head = ThHeadArrowRefreshView()
         self.head = head
         self.addSubview(head)
@@ -47,18 +47,18 @@ extension UIScrollView{
             }
         }
     }
-    func tableHeadStopRefreshing(){
+    public func tableHeadStopRefreshing(){
         self.head?.stopRefreshing()
     }
     //foot
-    func addFootRefresh(target : AnyObject?,action : Selector){
+    public func addFootRefresh(target : AnyObject?,action : Selector){
         let foot = ThFootRefreshView()
         self.foot = foot
         self.addSubview(foot)
         foot.refreshTarget = target
         foot.refreshAction = action
     }
-    func addFootRefresh(target : AnyObject? ,closure : ()->()){
+    public func addFootRefresh(target : AnyObject? ,closure : ()->()){
         let foot = ThFootRefreshView()
         self.foot = foot
         self.addSubview(foot)
@@ -80,16 +80,16 @@ extension UIScrollView{
             }
         }
     }
-    func tableFootStopRefreshing(){
+    public func tableFootStopRefreshing(){
         self.foot?.footEndRefreshing()
     }
-    func tableFootShowNomore(){
+    public func tableFootShowNomore(){
         if(self.istableFootRefreshing()){
             self.tableFootStopRefreshing()
         }
         self.foot?.state = .Nomore
     }
-    func istableFootRefreshing()->Bool{
+    public func istableFootRefreshing()->Bool{
         return self.foot?.state == .Refreshing
     }
 }
