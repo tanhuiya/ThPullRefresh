@@ -12,11 +12,17 @@ import UIKit
 extension UIScrollView{
 
     var th_offsetX : CGFloat {
+        set {
+            self.contentOffset = CGPointMake(newValue, self.contentOffset.x)
+        }
         get{
             return self.contentOffset.x
         }
     }
     var th_offsetY : CGFloat {
+        set {
+            self.contentOffset = CGPointMake(self.contentOffset.x, newValue)
+        }
         get{
             return self.contentOffset.y
         }

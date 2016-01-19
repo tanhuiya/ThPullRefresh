@@ -16,7 +16,7 @@ class ExampleTableView: UITableViewController {
        return NSMutableArray()
     }()
     var index = 0
-    //public 
+//MARK:Methods
     func beginRefresh(){
         self.tableView.headBeginRefresh()
     }
@@ -28,11 +28,12 @@ class ExampleTableView: UITableViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 44
         self.tableView.tableFooterView = UIView()
-        self.tableView.addHeadRefresh(self) { () -> () in
-            self.loadNewData()
-        }
+//        self.tableView.addHeadRefresh(self) { () -> () in
+//            self.loadNewData()
+//        }
+        self.tableView.addHeadRefresh(self, action: "loadNewData")
+
         self.tableView.head?.hideTimeLabel=true
-//        self.tableView.addHeadRefresh(self, action: "loadNewData")
         self.tableView.addFootRefresh(self, action: "loadMoreData")
     }
     
@@ -63,8 +64,14 @@ class ExampleTableView: UITableViewController {
         })
         
     }
+}
+extension ExampleTableView{
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("segue1", sender: nil)
+        if indexPath.row%2 == 0{
+            self.performSegueWithIdentifier("segue1", sender: nil)
+        }else{
+            self.navigationController?.pushViewController(ExampleController_two(), animated: true)
+        }
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView .dequeueReusableCellWithIdentifier("tableViewCell", forIndexPath: indexPath)
@@ -74,4 +81,5 @@ class ExampleTableView: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataArr.count
     }
+
 }
