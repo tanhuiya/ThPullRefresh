@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ThPullRefresh"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A RefreshControl that you can load latest data or more data quickly"
 
   # This description is used to generate tags and improve search results.
