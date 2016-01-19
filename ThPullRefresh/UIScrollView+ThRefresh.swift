@@ -18,23 +18,56 @@ extension UIScrollView{
     public func headBeginRefresh(){
         self.head!.beginRefresh()
     }
+
+    public func addBounceHeadRefresh(target:AnyObject?,action : Selector){
+        if((self.head) != nil){
+            self.head?.removeFromSuperview()
+            self.head = nil
+        }
+        let head = ThHeadBounceRefreshView()
+        self.head = head
+        self.addSubview(head)
+        head.refreshTarget = target
+        head.refreshAction = action
+    }
+    public func addBounceHeadRefresh(target : AnyObject? ,closure : ()->()){
+        if((self.head) != nil){
+            self.head?.removeFromSuperview()
+            self.head = nil
+        }
+        let head = ThHeadBounceRefreshView()
+        self.head = head
+        self.addSubview(head)
+        head.refreshTarget = target
+        head.refreshClosure = closure
+    }
+
     public func addHeadRefresh(target : AnyObject?,action : Selector){
+        if(self.head != nil){
+            self.head?.removeFromSuperview()
+            self.head = nil;
+        }
         let head = ThHeadArrowRefreshView()
         self.head = head
         self.addSubview(head)
         head.refreshTarget = target
         head.refreshAction = action
     }
+
     public func addHeadRefresh(target : AnyObject? ,closure : ()->()){
+        if(self.head != nil){
+            self.head?.removeFromSuperview()
+            self.head = nil;
+        }
         let head = ThHeadArrowRefreshView()
         self.head = head
         self.addSubview(head)
         head.refreshTarget = target
         head.refreshClosure = closure
     }
-    var head : ThHeadArrowRefreshView? {
+    var head : ThHeadRefreshView? {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.ThHeadRefreshName) as? ThHeadArrowRefreshView
+            return objc_getAssociatedObject(self, &AssociatedKeys.ThHeadRefreshName) as? ThHeadRefreshView
         }
         set {
             if let newValue = newValue {
@@ -51,14 +84,26 @@ extension UIScrollView{
         self.head?.stopRefreshing()
     }
     //foot
+
+
     public func addFootRefresh(target : AnyObject?,action : Selector){
+        if(self.foot != nil){
+            self.foot?.removeFromSuperview()
+            self.foot = nil;
+        }
         let foot = ThFootRefreshView()
         self.foot = foot
         self.addSubview(foot)
         foot.refreshTarget = target
         foot.refreshAction = action
     }
+
     public func addFootRefresh(target : AnyObject? ,closure : ()->()){
+        if(self.foot != nil){
+            self.foot?.removeFromSuperview()
+            self.foot = nil;
+        }
+
         let foot = ThFootRefreshView()
         self.foot = foot
         self.addSubview(foot)

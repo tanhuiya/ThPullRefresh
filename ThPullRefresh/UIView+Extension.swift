@@ -10,7 +10,22 @@ import Foundation
 import UIKit
 
 extension UIView{
-
+    var centerY : CGFloat {
+        get{
+            return self.center.y
+        }
+        set{
+            self.center = CGPointMake(self.center.x, newValue)
+        }
+    }
+    var centerX : CGFloat {
+        get{
+            return self.center.x
+        }
+        set{
+            self.center = CGPointMake(newValue, self.center.y)
+        }
+    }
     var bottom : CGFloat {
         get {
             return self.y+self.height
@@ -55,6 +70,15 @@ extension UIView{
         set{
             self.frame = CGRectMake(self.frame.origin.x,
                 self.frame.origin.y, self.frame.size.width, newValue)
+        }
+    }
+    var size : CGSize {
+        get {
+            return self.frame.size
+        }
+        set{
+            self.frame = CGRectMake(self.frame.origin.x,
+                self.frame.origin.y, newValue.width, newValue.height)
         }
     }
 }

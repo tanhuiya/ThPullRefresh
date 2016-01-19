@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+let ThHeadRefreshingCircleRadius : CGFloat = 12.0
+
+
 let ThHeadRefreshTimeKey = "HeadTimeKey"
 let ThHeadRefreshHeight : CGFloat = 54.0
 let ThHeadRefreshContentOffset = "contentOffset";
