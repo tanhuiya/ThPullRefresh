@@ -62,8 +62,6 @@
 		B03DF5111C3A60C4006BA034 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B03DF5131C3A60E1006BA034 /* ExampleController_one.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleController_one.swift; sourceTree = "<group>"; };
 		B03DF5141C3A60E1006BA034 /* ExampleTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableView.swift; sourceTree = "<group>"; };
-		B03DF5301C3A6FA0006BA034 /* ThHeadArrowRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThHeadArrowRefreshView.swift; sourceTree = "<group>"; };
-		B03DF5311C3A6FA0006BA034 /* ThHeadRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThHeadRefreshView.swift; sourceTree = "<group>"; };
 		B0D47CB31C4E420C00A121CD /* ThHeadBounceRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThHeadBounceRefreshView.swift; sourceTree = "<group>"; };
 		B0D47CB51C4E488B00A121CD /* ExampleController_two.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleController_two.swift; sourceTree = "<group>"; };
 		F5AE56571C3AB02E004D75E4 /* ThFootRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThFootRefreshView.swift; sourceTree = "<group>"; };
@@ -184,8 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				B0D47CB31C4E420C00A121CD /* ThHeadBounceRefreshView.swift */,
-				B03DF5301C3A6FA0006BA034 /* ThHeadArrowRefreshView.swift */,
-				B03DF5311C3A6FA0006BA034 /* ThHeadRefreshView.swift */,
 				F5AE56591C3AB02E004D75E4 /* ThHeadArrowRefreshView.swift */,
 				F5AE565A1C3AB02E004D75E4 /* ThHeadRefreshView.swift */,
 			);

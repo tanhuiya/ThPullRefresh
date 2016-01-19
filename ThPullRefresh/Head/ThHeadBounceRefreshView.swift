@@ -22,11 +22,21 @@ class ThHeadBounceRefreshView: ThHeadRefreshView {
     var shapeLayer = CAShapeLayer()
     var circleView = UIView()
     var circleLayer = CAShapeLayer()
+    var loadingColor : UIColor? {
+        willSet{
+            circleLayer.strokeColor = newValue!.CGColor
+        }
+    }
+    var bgColor : UIColor? {
+        willSet{
+            shapeLayer.fillColor = newValue!.CGColor
+        }
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.configeShapeLayer()
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -38,7 +48,7 @@ class ThHeadBounceRefreshView: ThHeadRefreshView {
         circleView.backgroundColor=UIColor.clearColor()
         
         circleLayer.fillColor = UIColor.clearColor().CGColor
-        circleLayer.strokeColor = UIColor.orangeColor().CGColor
+        circleLayer.strokeColor = self.loadingColor?.CGColor
         circleLayer.lineWidth = 3;
         circleLayer.frame = circleView.bounds
         
@@ -46,7 +56,6 @@ class ThHeadBounceRefreshView: ThHeadRefreshView {
         self.addSubview(circleView)
     }
     private func configeShapeLayer(){
-        shapeLayer.fillColor = UIColor.lightGrayColor().CGColor
         shapeLayer.frame = self.bounds
         self.layer.addSublayer(shapeLayer)
     }

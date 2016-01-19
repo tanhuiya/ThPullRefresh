@@ -13,19 +13,6 @@ class ExampleController_one: UIViewController ,UITableViewDelegate,UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     var index = 0
     var dataArr = NSMutableArray()
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let identifier = "ExampleCellOne"
-        var cell : UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(identifier)
-        if (cell == nil) {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: identifier)
-        }
-        cell!.textLabel?.text = self.dataArr[indexPath.row] as? String
-        cell?.contentView.backgroundColor=UIColor.yellowColor()
-        return cell!
-    }
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.dataArr.count
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,4 +37,19 @@ class ExampleController_one: UIViewController ,UITableViewDelegate,UITableViewDa
         self.navigationController?.popViewControllerAnimated(true)
     }
     
+}
+extension ExampleController_one{
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let identifier = "ExampleCellOne"
+        var cell : UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(identifier)
+        if (cell == nil) {
+            cell = UITableViewCell(style: .Default, reuseIdentifier: identifier)
+        }
+        cell!.textLabel?.text = self.dataArr[indexPath.row] as? String
+        cell?.contentView.backgroundColor=UIColor.yellowColor()
+        return cell!
+    }
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.dataArr.count
+    }
 }

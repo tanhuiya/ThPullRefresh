@@ -19,23 +19,27 @@ extension UIScrollView{
         self.head!.beginRefresh()
     }
 
-    public func addBounceHeadRefresh(target:AnyObject?,action : Selector){
+    public func addBounceHeadRefresh(target:AnyObject?,bgColor:UIColor,loadingColor:UIColor,action : Selector){
         if((self.head) != nil){
             self.head?.removeFromSuperview()
             self.head = nil
         }
         let head = ThHeadBounceRefreshView()
+        head.bgColor = bgColor
+        head.loadingColor = loadingColor
         self.head = head
         self.addSubview(head)
         head.refreshTarget = target
         head.refreshAction = action
     }
-    public func addBounceHeadRefresh(target : AnyObject? ,closure : ()->()){
+    public func addBounceHeadRefresh(target : AnyObject? ,bgColor:UIColor,loadingColor:UIColor,closure : ()->()){
         if((self.head) != nil){
             self.head?.removeFromSuperview()
             self.head = nil
         }
         let head = ThHeadBounceRefreshView()
+        head.bgColor = bgColor
+        head.loadingColor = loadingColor
         self.head = head
         self.addSubview(head)
         head.refreshTarget = target
@@ -103,7 +107,6 @@ extension UIScrollView{
             self.foot?.removeFromSuperview()
             self.foot = nil;
         }
-
         let foot = ThFootRefreshView()
         self.foot = foot
         self.addSubview(foot)
