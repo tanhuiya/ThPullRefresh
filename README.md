@@ -8,16 +8,19 @@ Cocoapods 导入：pod 'ThPullRefresh'，<br />
 ##用法如下：<br />
 * 添加下拉刷新<br />
         self.tableView.addHeadRefresh(self, action: "loadNewData")<br />
-        self.tableView.addHeadRefresh(self) { () -> () in<br />
+            self.tableView.addHeadRefresh(self) { () -> () in<br />
             self.loadNewData()<br />
         }<br />
+* 添加下拉动画刷新<br />
+    self.tableView.addBounceHeadRefresh(self,bgColor:UIColor.orangeColor(),loadingColor:UIColor.blueColor(), action: "loadNewData")<br />
+
 * 停止headRefresh<br />
-        self.tableView.tableHeadStopRefreshing()<br />
+        self.tableView .tableHeadStopRefreshing()<br />
         <br />
 * 添加上拉加载更多<br />
-        self.tableView.addFootRefresh(self, action: "loadMore")<br />
+        self.tableView.addFootRefresh(self, action: "loadMoreData")<br />
         self.tableView.addFootRefresh(self) { () -> () in<br />
-            self.loadMore()<br />
+            //todo<br />
         }<br />
 * 停止footRefresh<br />
-        self.tableView.tableFootStopRefreshing()<br />
+        self.tableView .tableFootStopRefreshing()<br />

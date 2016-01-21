@@ -18,6 +18,7 @@
 		B03DF5161C3A60E1006BA034 /* ExampleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5141C3A60E1006BA034 /* ExampleTableView.swift */; };
 		B0D47CB41C4E420C00A121CD /* ThHeadBounceRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D47CB31C4E420C00A121CD /* ThHeadBounceRefreshView.swift */; };
 		B0D47CB61C4E488B00A121CD /* ExampleController_two.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D47CB51C4E488B00A121CD /* ExampleController_two.swift */; };
+		F52919ED1C508BAE0053A247 /* ExampleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03DF5141C3A60E1006BA034 /* ExampleTableView.swift */; };
 		F5AE56601C3AB02E004D75E4 /* ThFootRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AE56571C3AB02E004D75E4 /* ThFootRefreshView.swift */; };
 		F5AE56611C3AB02E004D75E4 /* ThHeadArrowRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AE56591C3AB02E004D75E4 /* ThHeadArrowRefreshView.swift */; };
 		F5AE56621C3AB02E004D75E4 /* ThHeadRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AE565A1C3AB02E004D75E4 /* ThHeadRefreshView.swift */; };
@@ -350,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52919ED1C508BAE0053A247 /* ExampleTableView.swift in Sources */,
 				B03DF5041C3A5FD0006BA034 /* ThPullRefreshDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

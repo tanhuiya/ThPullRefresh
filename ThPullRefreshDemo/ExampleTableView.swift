@@ -23,7 +23,6 @@ class ExampleTableView: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.tableView.backgroundColor=UIColor.redColor()
         self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "tableViewCell")
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 44
@@ -35,6 +34,10 @@ class ExampleTableView: UITableViewController {
 
         self.tableView.head?.hideTimeLabel=true
         self.tableView.addFootRefresh(self, action: "loadMoreData")
+        
+        self.tableView.addFootRefresh(self) { () -> () in
+            //todo
+        }
     }
     
     func loadNewData(){

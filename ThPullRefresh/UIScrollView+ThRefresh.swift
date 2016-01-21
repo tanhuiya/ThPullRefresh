@@ -18,7 +18,10 @@ extension UIScrollView{
     public func headBeginRefresh(){
         self.head!.beginRefresh()
     }
-
+    /*
+    *bgColor 背景颜色
+    *loadingColor 加载的颜色
+    */
     public func addBounceHeadRefresh(target:AnyObject?,bgColor:UIColor,loadingColor:UIColor,action : Selector){
         if((self.head) != nil){
             self.head?.removeFromSuperview()
