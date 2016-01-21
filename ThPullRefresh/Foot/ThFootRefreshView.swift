@@ -76,8 +76,6 @@ class ThFootRefreshView : ThRefreshBasicView {
     }
     override func willMoveToSuperview(newSuperview: UIView?) {
         super.willMoveToSuperview(newSuperview)
-        newSuperview?.removeObserver(self, forKeyPath: "contentOffset" ,context: nil)
-//        newSuperview?.removeObserver(self, forKeyPath: ThRefreshPanKey ,context: nil)
         if newSuperview != nil{
             newSuperview!.addObserver(self, forKeyPath: ThRefreshPanKey, options: .New , context: nil)
             newSuperview!.addObserver(self, forKeyPath: "contentOffset", options: .New, context: nil)
@@ -187,5 +185,9 @@ class ThFootRefreshView : ThRefreshBasicView {
     }
     func footEndRefreshing(){
         self.state = .Idle
+    }
+    deinit{
+        self.superview?.removeObserver(self, forKeyPath: "contentOffset" ,context: nil)
+        self.superview?.removeObserver(self, forKeyPath: ThRefreshPanKey ,context: nil)
     }
 }

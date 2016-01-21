@@ -27,16 +27,16 @@ class ExampleTableView: UITableViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 44
         self.tableView.tableFooterView = UIView()
-//        self.tableView.addHeadRefresh(self) { () -> () in
-//            self.loadNewData()
-//        }
+        self.tableView.addHeadRefresh(self) { () -> () in
+            self.loadNewData()
+        }
         self.tableView.addHeadRefresh(self, action: "loadNewData")
 
         self.tableView.head?.hideTimeLabel=true
-        self.tableView.addFootRefresh(self, action: "loadMoreData")
+//        self.tableView.addFootRefresh(self, action: "loadMoreData")
         
         self.tableView.addFootRefresh(self) { () -> () in
-            //todo
+            self.loadMoreData()
         }
     }
     
@@ -58,7 +58,7 @@ class ExampleTableView: UITableViewController {
         //延时模拟刷新
         DeLayTime(2.0, closure: { () -> () in
             for (var i = 0 ;i<10;i++){
-                let str = "上拉刷新5个cell，第\(self.index++)个"
+                let str = "上拉刷新10个cell，第\(self.index++)个"
                 self.dataArr.addObject(str)
             }
             self.tableView.reloadData()

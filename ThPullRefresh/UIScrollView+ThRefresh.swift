@@ -23,10 +23,7 @@ extension UIScrollView{
     *loadingColor 加载的颜色
     */
     public func addBounceHeadRefresh(target:AnyObject?,bgColor:UIColor,loadingColor:UIColor,action : Selector){
-        if((self.head) != nil){
-            self.head?.removeFromSuperview()
-            self.head = nil
-        }
+        self.removeHead()
         let head = ThHeadBounceRefreshView()
         head.bgColor = bgColor
         head.loadingColor = loadingColor
@@ -36,10 +33,7 @@ extension UIScrollView{
         head.refreshAction = action
     }
     public func addBounceHeadRefresh(target : AnyObject? ,bgColor:UIColor,loadingColor:UIColor,closure : ()->()){
-        if((self.head) != nil){
-            self.head?.removeFromSuperview()
-            self.head = nil
-        }
+        self.removeHead()
         let head = ThHeadBounceRefreshView()
         head.bgColor = bgColor
         head.loadingColor = loadingColor
@@ -50,10 +44,7 @@ extension UIScrollView{
     }
 
     public func addHeadRefresh(target : AnyObject?,action : Selector){
-        if(self.head != nil){
-            self.head?.removeFromSuperview()
-            self.head = nil;
-        }
+        self.removeHead()
         let head = ThHeadArrowRefreshView()
         self.head = head
         self.addSubview(head)
@@ -62,10 +53,7 @@ extension UIScrollView{
     }
 
     public func addHeadRefresh(target : AnyObject? ,closure : ()->()){
-        if(self.head != nil){
-            self.head?.removeFromSuperview()
-            self.head = nil;
-        }
+        self.removeHead()
         let head = ThHeadArrowRefreshView()
         self.head = head
         self.addSubview(head)
@@ -90,14 +78,11 @@ extension UIScrollView{
     public func tableHeadStopRefreshing(){
         self.head?.stopRefreshing()
     }
-    //foot
-
+    
+    //MARK: foot
 
     public func addFootRefresh(target : AnyObject?,action : Selector){
-        if(self.foot != nil){
-            self.foot?.removeFromSuperview()
-            self.foot = nil;
-        }
+        self.removeFoot()
         let foot = ThFootRefreshView()
         self.foot = foot
         self.addSubview(foot)
@@ -106,15 +91,12 @@ extension UIScrollView{
     }
 
     public func addFootRefresh(target : AnyObject? ,closure : ()->()){
-        if(self.foot != nil){
-            self.foot?.removeFromSuperview()
-            self.foot = nil;
-        }
+        self.removeFoot()
         let foot = ThFootRefreshView()
-        self.foot = foot
         self.addSubview(foot)
         foot.refreshTarget = target
         foot.refreshClosure = closure
+        self.foot = foot
     }
     var foot : ThFootRefreshView? {
         get {
@@ -142,5 +124,14 @@ extension UIScrollView{
     }
     public func istableFootRefreshing()->Bool{
         return self.foot?.state == .Refreshing
+    }
+    
+    func removeFoot(){
+        self.foot = nil;
+        self.foot?.removeFromSuperview()
+    }
+    func removeHead(){
+        self.head?.removeFromSuperview()
+        self.head = nil;
     }
 }
