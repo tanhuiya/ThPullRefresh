@@ -246,11 +246,11 @@ class ThHeadBounceRefreshView: ThHeadRefreshView {
             self.r2.size = CGSizeMake(3, 3)
             c.size = CGSizeMake(3, 3)
             
-            l1.backgroundColor = UIColor.redColor()
-            l2.backgroundColor = UIColor.redColor()
-            r1.backgroundColor = UIColor.blueColor()
-            r2.backgroundColor = UIColor.blueColor()
-            c.backgroundColor = UIColor.purpleColor()
+            l1.backgroundColor = UIColor.clearColor()
+            l2.backgroundColor = UIColor.clearColor()
+            r1.backgroundColor = UIColor.clearColor()
+            r2.backgroundColor = UIColor.clearColor()
+            c.backgroundColor = UIColor.clearColor()
 
             self.addSubview(l1)
             self.addSubview(l2)

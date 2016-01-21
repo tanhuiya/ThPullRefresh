@@ -63,7 +63,6 @@ class ExampleTableView: UITableViewController {
             }
             self.tableView.reloadData()
             self.tableView .tableFootStopRefreshing()
-            self.tableView.tableFootShowNomore()
         })
         
     }

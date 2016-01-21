@@ -22,12 +22,9 @@ class ExampleController_two: UIViewController {
         super.viewDidLoad()
         self.view.addSubview(tableView)
         tableView.frame = self.view.bounds
-        self.tableView.addBounceHeadRefresh(self,bgColor:UIColor.orangeColor(),loadingColor:UIColor.blueColor(), action: "loadNewData")
+        self.tableView.addBounceHeadRefresh(self,bgColor:UIColor.orangeColor(),loadingColor:UIColor.lightGrayColor(), action: "loadNewData")
         self.tableView.addFootRefresh(self, action: "loadMoreData")
-        let view = UIView()
-        view.size = CGSizeMake(0, 100)
-        self.tableView.tableHeaderView = view
-        view.backgroundColor = UIColor.redColor()
+
     }
     func loadNewData(){
         dataArr.removeAllObjects()
