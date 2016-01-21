@@ -11,16 +11,17 @@ Cocoapods 导入：pod 'ThPullRefresh'，<br />
             self.tableView.addHeadRefresh(self) { () -> () in<br />
             self.loadNewData()<br />
         }<br />
-* 添加下拉动画刷新<br />
+![(下拉刷新)]（http://images2015.cnblogs.com/blog/884671/201601/884671-20160121112547937-1808285116.gif）
+## 添加下拉动画刷新<br />
     self.tableView.addBounceHeadRefresh(self,bgColor:UIColor.orangeColor(),loadingColor:UIColor.blueColor(), action: "loadNewData")<br />
-
-* 停止headRefresh<br />
+![(下拉动画刷新)]（http://images2015.cnblogs.com/blog/884671/201601/884671-20160121112857703-1924927269.gif）
+## 停止headRefresh<br />
         self.tableView .tableHeadStopRefreshing()<br />
         <br />
-* 添加上拉加载更多<br />
+## 添加上拉加载更多<br />
         self.tableView.addFootRefresh(self, action: "loadMoreData")<br />
         self.tableView.addFootRefresh(self) { () -> () in<br />
             //todo<br />
         }<br />
-* 停止footRefresh<br />
+## 停止footRefresh<br />
         self.tableView .tableFootStopRefreshing()<br />
