@@ -1,7 +1,7 @@
 # ThPullRefresh
 * swift 快速集成下拉刷新，上拉加载更多功能.<br />
 如何使用：<br />
-Cocoapods 导入：pod 'ThPullRefresh'，<br />
+CocoaPods 导入：pod 'ThPullRefresh'，<br />
 		在项目中 import 'ThPullRefresh'<br />
 手动导入：将'ThPullRefresh' 文件夹中的所有文件拽入项目中<br />
 
